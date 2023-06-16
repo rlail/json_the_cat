@@ -12,7 +12,7 @@ const fetchBreedDescription = function(breedName, callback) {
         const firstEntry = data[0];
         callback(null, `${firstEntry.name}: ${firstEntry.description}`);
       } else {
-        callback(null, `No results found for the breed "${breedName}".`);
+        callback(null, `No results found for the breed ${breedName}.`);
       }
     }
   });
